@@ -21,50 +21,81 @@ let message = `Hi ${userName}, you are ${userAge} years old and we'll keep in to
 alert(message);
 
 
+// ==============================
+// A. Store your name in a variable and log it to the console
+// ==============================
 
-
-// =======================================================
-// Assignment: JavaScript Basics - Variables & Operators
-// =======================================================
-
-// --- A: Store my name and log it ---
 let myName = "Adelaide";
-console.log(myName);
+console.log("My Name:", myName);
 
-// --- B: Store my age and log it ---
-let myAge = 24;
-console.log(myAge);
 
-// --- C: Add two numbers ---
-let firstNumber = 10;
-let secondNumber = 5;
-let sumResult = firstNumber + secondNumber;
-console.log(sumResult);
+// ==============================
+// B. Store your age in a variable and log it to the console
+// ==============================
 
-// --- D: Subtract two numbers ---
-let differenceResult = firstNumber - secondNumber;
-console.log(differenceResult);
+let myAge = 22;
+console.log("My Age:", myAge);
 
-// --- E: Divide two numbers ---
-let divisionResult = firstNumber / secondNumber;
-console.log(divisionResult);
 
-// --- F: Multiply two numbers ---
-let multiplicationResult = firstNumber * secondNumber;
-console.log(multiplicationResult);
+// ==============================
+// C. Add two numbers and log the result
+// ==============================
 
-// --- G: Remainder of 15 % 4 ---
-let remainderResult = 15 % 4;
-console.log(remainderResult);
+let addition = 15 + 10;
+console.log("Addition:", addition);
 
-// --- H: Store a boolean value ---
+
+// ==============================
+// D. Subtract two numbers and log the result
+// ==============================
+
+let subtraction = 20 - 8;
+console.log("Subtraction:", subtraction);
+
+
+// ==============================
+// E. Divide two numbers and log the result
+// ==============================
+
+let division = 24 / 6;
+console.log("Division:", division);
+
+
+// ==============================
+// F. Multiply two numbers and log the result
+// ==============================
+
+let multiplication = 7 * 5;
+console.log("Multiplication:", multiplication);
+
+
+// ==============================
+// G. Find the remainder of 15 % 4
+// ==============================
+
+let remainder = 15 % 4;
+console.log("Remainder:", remainder);
+
+
+// ==============================
+// H. Store a boolean value and log it
+// ==============================
+
 let isStudent = true;
-console.log(isStudent);
+console.log("Boolean Value:", isStudent);
 
-// --- I: Check the data type of a number ---
-let sampleNumber = 42;
-console.log(typeof sampleNumber);
 
-// --- J: Check the data type of a string ---
-let sampleString = "Hello, world!";
-console.log(typeof sampleString);
+// ==============================
+// I. Store a number and log its data type
+// ==============================
+
+let numberValue = 100;
+console.log("Data Type of numberValue:", typeof numberValue);
+
+
+// ==============================
+// J. Store a string and log its data type
+// ==============================
+
+let stringValue = "Frontend Programming";
+console.log("Data Type of stringValue:", typeof stringValue);
