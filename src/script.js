@@ -3,21 +3,38 @@
 // =======================================================
 
 // Step 1: Ask the user for their name
-// prompt() shows a popup box with a text input and returns what the user types
 let userName = prompt("Hi there! What is your name?");
 
 // Step 2: Ask the user for their age
-let userAge = prompt("Great! How old are you?");
+let userAgeInput = prompt("Great! How old are you?");
+let userAge = Number(userAgeInput);
 
 // Step 3: Ask the user for their email
 let userEmail = prompt("Last question — what is your email address?");
 
 // Step 4: Build the message using the variables we just collected
-// We use a template literal (backticks ``) so we can insert variables
-// directly into the string using ${variableName}
-let message = `Hi ${userName}, you are ${userAge} years old and we'll keep in touch via your email: ${userEmail}`;
+let message = "";
 
-// Step 5: Show the final message to the user in a popup alert box
+// Step 5: Check the user's age and build the appropriate message
+if (!userName || userName.trim() === "") {
+    message = "Please enter your name.";
+} else if (!userAgeInput || Number.isNaN(userAge) || userAge < 0) {
+    message = "Please enter a valid age.";
+} else if (userAge < 12) {
+    message = `Hi ${userName}, you are ${userAge} years old and you are too young to register.
+
+Sorry 😔😔`;
+} else if (userAge >= 12 && userAge < 18) {
+    message = `Hi ${userName}, you are ${userAge} years old and you have limited options to register for.
+
+We will keep in touch via your email: ${userEmail}. 👏🏽👏🏽`;
+} else {
+    message = `Hi ${userName}, you are ${userAge} years old and you can register for any option of your choosing.
+
+We will keep in touch via your email: ${userEmail}. 👏🏽👏🏽`;
+}
+
+// Step 6: Show the final message to the user in a popup alert box
 alert(message);
 
 
