@@ -19,3 +19,52 @@ let message = `Hi ${userName}, you are ${userAge} years old and we'll keep in to
 
 // Step 5: Show the final message to the user in a popup alert box
 alert(message);
+
+
+
+
+// =======================================================
+// Assignment: JavaScript Basics - Variables & Operators
+// =======================================================
+
+// --- A: Store my name and log it ---
+let myName = "Adelaide";
+console.log(myName);
+
+// --- B: Store my age and log it ---
+let myAge = 24;
+console.log(myAge);
+
+// --- C: Add two numbers ---
+let firstNumber = 10;
+let secondNumber = 5;
+let sumResult = firstNumber + secondNumber;
+console.log(sumResult);
+
+// --- D: Subtract two numbers ---
+let differenceResult = firstNumber - secondNumber;
+console.log(differenceResult);
+
+// --- E: Divide two numbers ---
+let divisionResult = firstNumber / secondNumber;
+console.log(divisionResult);
+
+// --- F: Multiply two numbers ---
+let multiplicationResult = firstNumber * secondNumber;
+console.log(multiplicationResult);
+
+// --- G: Remainder of 15 % 4 ---
+let remainderResult = 15 % 4;
+console.log(remainderResult);
+
+// --- H: Store a boolean value ---
+let isStudent = true;
+console.log(isStudent);
+
+// --- I: Check the data type of a number ---
+let sampleNumber = 42;
+console.log(typeof sampleNumber);
+
+// --- J: Check the data type of a string ---
+let sampleString = "Hello, world!";
+console.log(typeof sampleString);
